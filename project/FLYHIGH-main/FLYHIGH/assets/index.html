@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB PROJECT</title>
+    <link rel="icon" href="./assets/files/logo.png">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+
+    <!-- Background Video & Header -->
+
+    <div class="banner">
+        <!-- <video src="./assets/files/mouintain.mp4" type="video/mp4" autoplay muted loop></video> -->
+        <video id="videoPlayer" autoplay muted></video>
+
+        <!-- Header -->
+
+
+        <div class="content" id="home">
+            <!-- <nav>
+                <img src="./assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
+                <ul class="navbar">
+                    <li>
+                        <a href="#home">Home</a>
+                        <a href="#package">Packages</a>
+                        <a href="#locations">Locations</a>
+                        <a href="https://flourishing-kleicha-16fd98.netlify.app/">About Us</a>
+                        <a href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                </form>
+            </nav> -->
+            <nav id="navbar">
+                <div class="nav-container">
+                    <div class="logo" onclick="scrollToSection('home')">
+                        <img src="assets/files/logo.png" alt="Logo">
+                        <span>FlyHigh</span>
+                    </div>
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#locations">Locations</a>
+                        <a href="https://ubiquitous-otter-4b9e40.netlify.app/">About Us</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="title">
+                <h1>ADVENTOUR</h1>
+                <p>See The Wonders Land Of Nepal !!! Explore Amazing Destinations.
+                </p>
+
+                <a href="./booking.html" class="button">
+                    <span class="material-symbols-outlined">
+                        how_to_reg
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <section class="container">
+        <div class="text">
+            <h2>We have the best services available for you!</h2>
+        </div>
+        <div class="rowitems">
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./assets/files/1a.jpg" alt="https://sastotickets.com/">
+                </div>
+                <h4>Flight Services</h4>
+                <p>Arrival and Departure</p>
+            </div>
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./assets/files/2a.jpg" alt="Food Services">
+                </div>
+                <h4>Food Services</h4>
+                <p>Catering</p>
+            </div>
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./assets/files/3a.jpg" alt="Travel Services">
+                </div>
+                <h4>Travel Services</h4>
+                <p>Pick-up/drop</p>
+            </div>
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./assets/files/4a.jpg" alt="Hotel Services">
+                </div>
+                <h4>Hotel Services</h4>
+                <p>Check-in/out</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+
+    <section class="package" id="package">
+        <div class="package-title">
+            <h2>Packages</h2>
+        </div>
+
+
+    </section>
+
+    <section>
+        <br><br>
+        <div class="pack4-content">
+            <div style="text-align:center">
+                <button type="button" class="btn btn-primary"><a href="./booking.html">
+                        <JavaBlink>Book Now</JavaBlink>
+                    </a></button>
+            </div>
+        </div><br><br>
+    </section>
+
+
+
+
+    <!-- Explore Button -->
+
+    <div style="text-align:center">
+        <button type="button" class="btn btn-primary"> <a href="locations.html">Explore More</a></button>
+    </div>
+    </section><br>
+    <hr><br>
+
+    <!-- Locations -->
+    <section class="locations" id="locations">
+        <div class="package-title">Explore Our Locations</div>
+
+        <!-- Swiper container -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="locations/ktm.html">
+                        <div class="col-content">
+                            <img src="./assets/files/ktm.jpg" alt="">
+                            <h5>KATHMANDU</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html">
+                        <div class="col-content">
+                            <img src="./assets/files/chitwan.jpg" alt="">
+                            <h5>CHITWAN</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html">
+                        <div class="col-content">
+                            <img src="./assets/files/manag.jpg" alt="">
+                            <h5>MANANG & MUSTANG</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#">
+                        <div class="col-content">
+                            <img src="./assets/files/pokhara.jpg" alt="">
+                            <h5>POKHARA</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#">
+                        <div class="col-content">
+                            <img src="./assets/files/lumbini.jpg" alt="">
+                            <h5>LUMBINI</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#">
+                        <div class="col-content">
+                            <img src="./assets/files/everest-base-camp.jpg" alt="">
+                            <h5>EVEREST BASE CAMP</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#">
+                        <div class="col-content">
+                            <img src="./assets/files/cover.jpg" alt="">
+                            <h5>NATIONAL PARK</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <!-- 
+    <section class="locations" id="locations">
+        <div class="package-title">
+            <h2>Locations</h2>
+        </div>
+
+        <div class="location-content">
+            <a href="./locations.html">
+                <div class="col-content">
+                    <img src="./assets/files/ktm.jpg" alt="">
+                    <h5>KATHMANDU</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#istanbul">
+                <div class="col-content">
+                    <img src="./assets/files/chitwan.jpg" alt="">
+                    <h5>CHITWAN</h5>
+
+                </div>
+            </a>
+
+            <a href="./locations.html#paris">
+                <div class="col-content">
+                    <img src="./assets/files/manag.jpg" alt="">
+                    <h5>MANANG & MUSTANG</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#bali">
+                <div class="col-content">
+                    <img src="./assets/files/pokhara.jpg" alt="">
+                    <h5>POKHARA</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#dubai">
+                <div class="col-content">
+                    <img src="./assets/files/lumbini.jpg" alt="">
+                    <h5>LUMBINI</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#geneva">
+                <div class="col-content">
+                    <img src="./assets/files/everest-base-camp.jpg" alt="">
+                    <h5>EVEREST BASE CAMP</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#newyork">
+                <div class="col-content">
+                    <img src="./assets/files/cover.jpg" alt="">
+                    <h5>NATIONAL PARK</h5>
+                </div>
+
+
+        </div>
+    </section> -->
+    <br>
+    <hr>
+
+    <!-- FAQ;s -->
+
+    <section><br>
+        <div class="destination-title">
+            <h2>Best Destinations to Visit in Nepal</h2>
+        </div>
+        <div class="container1">
+            <style>
+                .destination-title {
+                    text-align: center;
+                }
+
+                .container1 {
+                    display: grid;
+                    position: relative;
+                    grid-template-columns: auto auto auto;
+                    background: color #f6f1f1;
+                    padding: 48px;
+                    font-size: 12px;
+                    gap: 10px;
+                    margin-top: 5px;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    margin-bottom: 1px;
+
+                    .loc-detail li {
+                        font-size: 10px;
+                        color: black;
+                        margin-left: 15px;
+                        margin-bottom: 2px;
+                        list-style-type: circle;
+                    }
+
+                    .box {
+                        background: inherit;
+                        color: black;
+                        box-shadow: 5px 5px 10px #3b3737;
+                        padding: 5px;
+                        border-radius: 15px;
+                    }
+                }
+            </style>
+
+            <div class="box">
+                <h1>POKHARA</h1>
+
+                <p>Pokhara, often referred to as the "City of Lakes," is a picturesque city in central Nepal,
+                    approximately 200 kilometers west of Kathmandu. Serving as the capital of Gandaki Province, it is
+                    renowned for its stunning natural beauty, including serene lakes and panoramic views of the
+                    Annapurna mountain range..</p>
+                <br>
+                <br><b>Best time to visit :</b> October - Nomember<br>
+
+                <br> <b>Best places to visit:</b>
+                <ul class="loc-detail">
+                    <li> Phewa Lake: A scenic freshwater lake with boating and water sports opportunities, surrounded by
+                        lush forests and the Annapurna range.</li>
+                    <li>Sarangkot: Located on a hilltop, Sarangkot offers breathtaking views of the sunrise over the
+                        Annapurna range, as well as paragliding opportunities.</li>
+                    <li>World Peace Pagoda (Shanti Stupa): Perched atop a hill on the southern shore of Phewa Lake, this
+                        Buddhist stupa provides panoramic views of the Annapurna range, Phewa Lake, and the city.</li>
+                    <li> Davis Falls (Patale Chhango): A unique waterfall where the Pardi Khola stream vanishes into an
+                        underground tunnel. The nearby Gupteshwor Mahadev Cave is also worth exploring.
+                    </li>
+                    <li> International Mountain Museum: This museum showcases the history of mountaineering, the culture
+                        of mountain communities, and information about the Himalayan peaks.
+                    </li>
+                    <li> Bindhyabasini Temple: One of the oldest temples in Pokhara, dedicated to the Hindu goddess
+                        Durga, offering insights into local religious practices and festivals.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h1>
+                    KATHMANDU
+                </h1>
+                <p>Kathmandu, the capital city of Nepal, is a vibrant metropolis that seamlessly blends ancient
+                    traditions with modern urban life. Nestled in the Kathmandu Valley and surrounded by the majestic
+                    Himalayas, the city is renowned for its rich cultural heritage, historic temples, and bustling
+                    markets.<br> <br><br>
+                    <br> <b>Best time to visit:</b> September to March <br>
+
+                    <br> <b>Best places to visit:</b>
+                <ul class="loc-detail">
+                    <li><b>Kathmandu Durbar Square:</b> A UNESCO World Heritage site, this historic square is adorned
+                        with
+                        palaces, courtyards, and temples that showcase exquisite Newari architecture. It's a testament
+                        to the city's royal history and artistic heritage. </li>
+                    <li>Swayambhunath Stupa (Monkey Temple): Perched atop a hill, this ancient stupa offers panoramic
+                        views of the Kathmandu Valley. Adorned with colorful prayer flags and intricate carvings, it's a
+                        significant pilgrimage site for Buddhists. </li>
+                    <li>Pashupatinath Temple: One of the holiest Hindu temples dedicated to Lord Shiva, Pashupatinath is
+                        a sprawling complex on the banks of the Bagmati River. It's a center for spiritual rituals and a
+                        UNESCO World Heritage site. </li>
+                    <li>Boudhanath Stupa: One of the largest stupas in the world, Boudhanath is a focal point for
+                        Tibetan Buddhism in Nepal. The stupa's massive mandala and serene ambiance make it a must-visit
+                        destination. </li>
+                    <li>Thamel: Kathmandu's vibrant tourist hub, Thamel is a maze of narrow streets filled with shops,
+                        restaurants, and cafes. It's the perfect place to shop for souvenirs, enjoy local cuisine, and
+                        experience the city's nightlife. </li>
+                </ul>
+                <br>
+
+
+
+            </div>
+
+            <div class="box">
+                <h1>CHITWAN</h1>
+                <p>
+                    Chitwan, located in the Terai region of south-central Nepal, is renowned for its rich biodiversity
+                    and cultural heritage. The name "Chitwan" translates to "heart of the jungle," reflecting its dense
+                    forests and abundant wildlife Established in 1973 as Nepal's first national park, Chitwan National
+                    Park covers approximately 93,200 hectares. It is a UNESCO World Heritage site, recognized for its
+                    significant populations of one-horned rhinoceroses and Bengal tigers. <br>
+                    <br> <b> Best Time to Visit:</b> March to August <br>
+
+                    <br> Best Places to Visit: <br>
+                <ul class="loc-detail">
+                    <li> Jeep Safaris: Explore the park's diverse ecosystems and spot wildlife such as rhinos, tigers,
+                        elephants, and numerous bird species.
+                    </li>
+                    <li> Canoe Rides: Traverse the Rapti River to observe crocodiles and waterfowl in their natural
+                        habitats.</li>
+                    <li> Guided Nature Walks: Accompanied by experienced guides, these walks offer insights into the
+                        park's flora and fauna.
+
+                    </li>
+                    <li>Cultural Experiences: Engage with the indigenous Tharu community to learn about their
+                        traditions, dances, and lifestyle. </li>
+                    <li> </li>
+                </ul>
+                <br>
+            </div>
+
+            <div class="box">
+                <h1>MOUNT EVEREST</h1>
+                <p>Mount Everest, known as Sagarmatha in Nepal and Qomolangma in Tibet, stands as the world's highest
+                    peak at 8,848.86 meters (29,031.7 feet). It is situated on the border between Nepal and the Tibet
+                    Mount Everest is part of the Great Himalayas and has been a focal point for mountaineers and
+                    adventurers since its first successful ascent by Sir Edmund Hillary and Tenzing Norgay in 1953. <br>
+                    <br> <b>Best Time to Visit:</b> March to May <br>
+
+                    <br> Two primary routes to the summit are: <br>
+                <ul class="loc-detail">
+                    <li> Southeast Ridge (Nepal): Known as the standard route, it is the most commonly used path to the
+                        summit.
+
+                    </li>
+                    <li> North Ridge (Tibet): An alternative route that presents its own set of challenges.</li>
+                    </li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="box">
+                <h1>MANANG & MUSTANG</h1>
+                <p>Located in the Gandaki Province, Manang lies north of the Annapurna mountain range. The region is
+                    renowned for its arid terrain, alpine meadows, and traditional Tibetan-influenced culture. Manang
+                    serves as a significant stop on the Annapurna Circuit, attracting trekkers with its panoramic
+                    mountain vistas and ancient monasteries.
+
+                    <br>
+
+                    <br> <b>Best Time to Visit:</b> May to June/December to January <br>
+
+                    <br> Best Places to Visit:
+                <ul class="loc-detail">
+                    <li>Both Manang and Mustang are situated in the rain shadow of the Himalayas, resulting in arid
+                        climates with minimal rainfall. This unique positioning makes them ideal destinations during the
+                        monsoon season (June to August) when other regions in Nepal experience heavy rains. However, the
+                        most favorable trekking conditions are typically found in the pre-monsoon (March to May) and
+                        post-monsoon (September to November) periods, offering clear skies and moderate temperatures.
+                    </li>
+                    
+                </ul>
+                </p>
+            </div>
+
+            <div class="box">
+                <h1>LUMBINI</h1>
+                <p> Lumbini, located in the Terai plains of southern Nepal, is revered as the birthplace of Siddhartha
+                    Gautama, who became known as the Buddha. In 623 BC, Queen Maha Maya gave birth to Siddhartha in this
+                    sacred area, as evidenced by an inscription on a pillar erected by Emperor Ashoka in 249 BC.
+                    <br>
+
+                    <br> <b> Best time to visit:</b> March to April/September to October <br>
+
+                    <br> Best places to visit:
+                <ul class="loc-detail">
+                    <li> Maya Devi Temple: This temple marks the exact spot where Queen Maha Maya gave birth to
+                        Siddhartha Gautama. Archaeological excavations have revealed ancient structures dating back to
+                        the 3rd century BC, making it a focal point for pilgrims and historians alike. </li>
+                    <li> Ashoka Pillar: Erected by Emperor Ashoka during his pilgrimage, this sandstone pillar bears
+                        inscriptions that commemorate his visit and the significance of Lumbini as the Buddha's
+                        birthplace.</li>
+                    <li> Sacred Garden: Encompassing the Maya Devi Temple and the Ashoka Pillar, the Sacred Garden is a
+                        tranquil area designed for reflection and meditation. The serene environment is enhanced by
+                        water features and lush greenery.</li>
+                    <li> Monastic Zone: Divided into eastern and western sections, this zone houses monasteries built by
+                        various countries, each reflecting unique architectural styles and interpretations of Buddhist
+                        teachings.</li>
+                </ul>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+
+        <div class="container2">
+            <style>
+                .container2 {
+                    position: relative;
+                    grid-template-columns: auto auto auto;
+                    gap: 5%;
+                    padding: 35px;
+                    margin-top: 50px;
+                    margin-left: 35px;
+                    margin-right: 34px;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    color: black;
+                    background-color: white;
+                    box-shadow: 5px 5px 10px #3b3737;
+                }
+            </style>
+
+            <div> <br>
+                <h1 class="faqh1">FAQs - Frequently Asked Questions</h1>
+            </div>
+
+            <p><br>
+            <h3> What kind of destinations can I choose for travelling?</h3> <br>
+            <p> You can choose any destination for travel as per your mood. For an action-packed holiday, you can choose
+                wildlife, trekking and other adventurous destinations. For a romantic holiday with your special someone,
+                you can choose from a range of couple-friendly destinations. You can also choose the kind of holiday you
+                want based on the destination you like—whether hills, mountains, beaches, heritage or pilgrimage sites.
+            </p><br>
+            <hr>
+
+            <br>
+            <h3> Can I opt for a budget-friendly holiday?</h3><br>
+            <p>
+                Yes, you can. All you have to do is set an approximate expenditure amount in your mind before starting
+                exploring the ideas here. You can search for a suitable destination for your travel in any range from
+                Rs. 10,000 to Rs. 50,000. It is advisable to make all the bookings in advance in order to avoid change
+                in prices.</p><br>
+            <hr>
+
+            <br>
+            <h3> Which time of the year is best suited for booking a holiday?</h3><br>
+            <p>x
+                Holidays can be booked throughout the year. You only need to select the month in which you are planning
+                to travel. Our curated list of ideas is designed in such a way that you will be able to see only those
+                destinations which are most suitable for that particular month of the year. If you select a combination
+                of filters defining your month, budget and purpose of travel, you will get the appropriate destination
+                name and other details.</p><br>
+            <hr>
+
+            <br>
+            <h3>What all will I get in a holiday idea?</h3>
+            <p>Once you choose a destination, it will give you complete details of all the unique things about that
+                place that must not be missed, including most visited local sites, best places to stay and all the
+                memorable experiences that you can indulge in. You will be given multiple options of hotels, resorts and
+                guest houses to choose from depending on your budget. </p> <br>
+            <hr>
+            </p>
+        </div>
+    </section> -->
+
+
+
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./booking.html">Register</a></li>
+                        <li><a href="./info.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/amitbahardarmalaha" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/AMITBAHARDAR" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Copyright © 2081 Adventour All Rights Reserved. </p>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/blink.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                480: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            },
+        });
+    </script>
+
+
+
+</body>
+
+</html>

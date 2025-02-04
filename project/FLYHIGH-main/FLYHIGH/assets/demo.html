@@ -1,0 +1,346 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .location-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .col-content {
+            position: relative;
+            filter: brightness(95%);
+            transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+
+        .col-content img {
+            margin-bottom: 10px;
+            height: 300px;
+            border-radius: 27px;
+            width: 100%;
+        }
+
+        .col-content h5 {
+            position: absolute;
+            font-size: 15px;
+            color: white;
+            font-weight: 500;
+            left: 20px;
+            bottom: 105px;
+            cursor: pointer;
+        }
+
+        .col-content p {
+            position: absolute;
+            font-size: 10px;
+            color: white;
+            left: 20px;
+            bottom: 80px;
+            cursor: pointer;
+        }
+
+        .col-content:hover {
+            filter: brightness(120%);
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="locations" id="locations">
+        <div class="package-title">
+            <h2>Locations</h2>
+        </div>
+
+        <div class="location-content">
+            <a href="./locations.html">
+                <div class="col-content">
+                    <img src="./assets/files/ktm.jpg" alt="">
+                    <h5>KATHMANDU</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#chitwan">
+                <div class="col-content">
+                    <img src="./assets/files/chitwan.jpg" alt="">
+                    <h5>CHITWAN</h5>
+
+                </div>
+            </a>
+
+            <a href="./locations.html#manang">
+                <div class="col-content">
+                    <img src="./assets/files/manag.jpg" alt="">
+                    <h5>MANANG & MUSTANG</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#pokhara">
+                <div class="col-content">
+                    <img src="./assets/files/pokhara.jpg" alt="">
+                    <h5>POKHARA</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#lumbini">
+                <div class="col-content">
+                    <img src="./assets/files/lumbini.jpg" alt="">
+                    <h5>LUMBINI</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#everest">
+                <div class="col-content">
+                    <img src="./assets/files/everest-base-camp.jpg" alt="">
+                    <h5>EVEREST BASE CAMP</h5>
+                </div>
+            </a>
+
+            <a href="./locations.html#national-park">
+                <div class="col-content">
+                    <img src="./assets/files/cover.jpg" alt="">
+                    <h5>NATIONAL PARK</h5>
+                </div>
+
+
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Image Slider</title>
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        .package-title {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .swiper {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .swiper-slide:hover {
+            transform: scale(1.05);
+        }
+
+        .col-content {
+            position: relative;
+            max-width: 300px;
+            filter: brightness(95%);
+            transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+
+        .col-content img {
+            margin-bottom: 10px;
+            height: 300px;
+            border-radius: 27px;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .col-content h5 {
+            position: absolute;
+            font-size: 1.2rem;
+            color: white;
+            font-weight: bold;
+            left: 20px;
+            bottom: 25px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            color: #007bff;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #333 !important;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #007bff !important;
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .col-content img {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .col-content img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="locations" id="locations">
+        <div class="package-title">Explore Our Locations</div>
+
+        <!-- Swiper container -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="./locations.html">
+                        <div class="col-content">
+                            <img src="./assets/files/ktm.jpg" alt="">
+                            <h5>KATHMANDU</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#chitwan">
+                        <div class="col-content">
+                            <img src="./assets/files/chitwan.jpg" alt="">
+                            <h5>CHITWAN</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#manang">
+                        <div class="col-content">
+                            <img src="./assets/files/manag.jpg" alt="">
+                            <h5>MANANG & MUSTANG</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#pokhara">
+                        <div class="col-content">
+                            <img src="./assets/files/pokhara.jpg" alt="">
+                            <h5>POKHARA</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#lumbini">
+                        <div class="col-content">
+                            <img src="./assets/files/lumbini.jpg" alt="">
+                            <h5>LUMBINI</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#everest">
+                        <div class="col-content">
+                            <img src="./assets/files/everest-base-camp.jpg" alt="">
+                            <h5>EVEREST BASE CAMP</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./locations.html#national-park">
+                        <div class="col-content">
+                            <img src="./assets/files/cover.jpg" alt="">
+                            <h5>NATIONAL PARK</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Swiper.js Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                480: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            },
+        });
+    </script>
+</body>
+
+</html>
